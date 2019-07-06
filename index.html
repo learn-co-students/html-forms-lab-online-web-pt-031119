@@ -10,39 +10,26 @@
     <h1>Company Inc.</h1>
     <h2>For all your incorporated company needs</h2>
 
-    <!-- First, create a form tag where our inputs will be nested -->
+    <form action="http://example.com/process-user.rb" method="post"> 
 
+      <label for="fullname">Please Enter Your Full Name:</label> 
+      <input type="text" name="fullname" id="fullname" placeholder="Enter Name" required> 
 
-      <!-- Add a label for 'fullname'-->
+      <label for="email">Please Enter Your Email:</label>
+      <input type="email" name="email" id ="email" placeholder="Enter Email" required> 
 
-      <!-- Add a text input with the id and name attributes set to 'fullname' -->
-      <!-- Include the place holder text "Enter Name" and make this input required -->
+      <label for="phone">Please Enter Your Phone Number:</label>
+      <input type="tel" name="phone" id="phone" placeholder="Enter Telephone (optional)"> 
 
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" placeholder="Enter Message"></textarea>
 
-      <!-- Add a label for 'email'-->
+      <label for="newsletter">Check the box if you would like to receive our newsletter:</label>
+      <input type="checkbox" name="newsletter" value="newsletter">
 
-      <!-- Add a email input with the id and name attributes set to 'email' -->
-      <!-- Include the place holder text "Enter Email" and make this input required -->
+      <input type="submit" value="submit"> 
 
-
-      <!-- Add a label for 'phone'-->
-
-      <!-- Add a telephone input with the id and name attributes set to 'phone' -->
-      <!-- Include the place holder text "Enter Telephone (optional)" -->
-
-
-      <!-- Add a label for 'message'-->
-
-      <!-- Add a textarea tag with the id and name attributes set to 'message' -->
-      <!-- Include the place holder text "Enter Message" -->
-
-
-      <!-- Add a checkbox input with the id set to 'checkbox' -->
-
-
-
-      <!-- Add an input with the type set to 'submit' -->
-
-    
+    </form>
+   
   </body>
 </html>
